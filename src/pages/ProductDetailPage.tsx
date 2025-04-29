@@ -6,7 +6,6 @@ import { ArrowLeft, Minus, Plus, Star } from 'lucide-react';
 import Layout from '@/components/Layout';
 import ProductCard from '@/components/ProductCard';
 import { getProductBySlug, getRelatedProducts } from '@/data/products';
-import Image from 'next/image';
 
 const ProductDetailPage = () => {
   const param = useParams()
@@ -77,7 +76,7 @@ const ProductDetailPage = () => {
           {/* Product Images */}
           <div className="lg:w-1/2 px-4 mb-8 lg:mb-0">
             <div className="border rounded-lg overflow-hidden bg-white p-4 mb-4">
-              <Image
+              <img
                 src={product.image}
                 alt={product.name}
                 className="w-full h-96 object-contain object-center animate-fade-in"
@@ -87,7 +86,7 @@ const ProductDetailPage = () => {
               <div className="grid grid-cols-4 gap-2">
                 {product.gallery.map((image, index) => (
                   <div key={index} className="border rounded-lg overflow-hidden bg-white p-2 cursor-pointer">
-                    <Image
+                    <img
                       src={image}
                       alt={`${product.name} - Ảnh ${index + 1}`}
                       className="w-full h-24 object-cover object-center"

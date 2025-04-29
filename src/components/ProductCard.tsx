@@ -1,6 +1,5 @@
 
 import Link from "next/link";
-import Image from "next/image";
 
 interface ProductCardProps {
   id: string;
@@ -21,7 +20,7 @@ const ProductCard = ({ name, image, price, slug, isNew, isPopular }: ProductCard
     <div className="product-card group animate-zoom-in">
       <div className="relative overflow-hidden">
         <Link href={`/san-pham/${slug}`}>
-          <Image 
+          <img
             src={image} 
             alt={name} 
             className="w-full h-64 object-contain object-center transform group-hover:scale-105 transition duration-500"

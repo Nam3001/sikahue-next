@@ -5,7 +5,6 @@ import { useParams } from 'next/navigation';
 import { ArrowLeft, Calendar, User } from 'lucide-react';
 import Layout from '@/components/Layout';
 import { getBlogPostBySlug, getLatestBlogPosts } from '@/data/blog';
-import Image from 'next/image';
 
 
 
@@ -98,7 +97,7 @@ const BlogDetailPage = () => {
         
         {/* Featured Image */}
         <div className="mb-8 animate-fade-in" style={{ animationDelay: '0.2s' }}>
-          <Image
+          <img
             src={post.image}
             alt={post.title}
             className="w-full h-auto rounded-lg shadow-md"
@@ -132,7 +131,7 @@ const BlogDetailPage = () => {
                   style={{ animationDelay: `${0.1 * index}s` }}
                 >
                   <Link href={`/tin-tuc/${recentPost.slug}`}>
-                    <Image 
+                    <img
                       src={recentPost.image} 
                       alt={recentPost.title} 
                       className="w-full h-40 object-cover"

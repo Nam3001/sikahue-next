@@ -1,3 +1,4 @@
+import { HOST } from "./common";
 
 export interface BlogPost {
   id: string;
@@ -57,7 +58,7 @@ export const blogPosts: BlogPost[] = [
       
       <p>Việc lựa chọn giải pháp chống thấm phù hợp phụ thuộc vào nhiều yếu tố như loại công trình, điều kiện thời tiết, ngân sách và yêu cầu kỹ thuật. Liên hệ với chúng tôi để được tư vấn giải pháp chống thấm tối ưu nhất cho công trình của bạn.</p>
     `,
-    image: '/lovable-uploads/51cf67cf-603c-4535-a44a-81d6f7d48922.png',
+    image: `${HOST}/lovable-uploads/51cf67cf-603c-4535-a44a-81d6f7d48922.png`,
     date: '2023-10-15',
     author: 'Nguyễn Văn A',
     category: 'Chống Thấm'
@@ -117,7 +118,7 @@ export const blogPosts: BlogPost[] = [
       
       <p>Tuân thủ các bước thi công trên sẽ giúp bạn đạt được hiệu quả chống thấm tối ưu với SikaTop Seal 107. Nếu cần tư vấn thêm, hãy liên hệ với chúng tôi để được hỗ trợ.</p>
     `,
-    image: '/lovable-uploads/db6f83fd-8829-474f-8803-aa52919a348f.png',
+    image: `${HOST}/lovable-uploads/db6f83fd-8829-474f-8803-aa52919a348f.png`,
     date: '2023-11-05',
     author: 'Trần Văn B',
     category: 'Hướng Dẫn'
@@ -216,7 +217,7 @@ export const blogPosts: BlogPost[] = [
       
       <p>Liên hệ với chúng tôi để được tư vấn lựa chọn sản phẩm Sika phù hợp nhất cho công trình của bạn.</p>
     `,
-    image: '/lovable-uploads/51cf67cf-603c-4535-a44a-81d6f7d48922.png',
+    image: `${HOST}/lovable-uploads/51cf67cf-603c-4535-a44a-81d6f7d48922.png`,
     date: '2023-12-20',
     author: 'Lê Thị C',
     category: 'So Sánh'
@@ -307,7 +308,7 @@ export const blogPosts: BlogPost[] = [
       
       <p>Với các giải pháp chống thấm toàn diện từ Sika, bạn có thể hoàn toàn yên tâm về khả năng chống thấm của tầng hầm. Hãy liên hệ với chúng tôi để được tư vấn chi tiết cho công trình cụ thể của bạn.</p>
     `,
-    image: '/lovable-uploads/db6f83fd-8829-474f-8803-aa52919a348f.png',
+    image: `${HOST}/lovable-uploads/db6f83fd-8829-474f-8803-aa52919a348f.png`,
     date: '2024-01-10',
     author: 'Phạm Văn D',
     category: 'Giải Pháp'

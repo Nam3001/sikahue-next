@@ -1,3 +1,4 @@
+import { HOST } from "./common";
 
 export interface Product {
   id: string;
@@ -18,11 +19,12 @@ export interface Product {
 export const products: Product[] = [
   {
     id: '1',
-    name: 'Sika Latex TH',
+    name: 'Sika Latex TH 25L',
     slug: 'sika-latex-th',
-    image: '/lovable-uploads/51cf67cf-603c-4535-a44a-81d6f7d48922.png',
+    image: `${HOST}lovable-uploads/sika-latex-th-25l-thumbnail.jpg`,
     gallery: [
-      '/lovable-uploads/51cf67cf-603c-4535-a44a-81d6f7d48922.png',
+      `${HOST}lovable-uploads/sika-latex-th-25l-thumbnail.jpg`,
+      `${HOST}lovable-uploads/sika-latex-th-25l-gallery-1.jpg`,
     ],
     description: 'Phụ gia chống thấm và tác nhân kết dính cho vữa và bê tông. Là một nhũ tương tổng hợp nhằm cải thiện phẩm chất của vữa trộn xi măng.',
     price: 195000,
@@ -47,9 +49,10 @@ export const products: Product[] = [
     id: '2',
     name: 'SikaTop Seal 107 VN',
     slug: 'sikatop-seal-107-vn',
-    image: '/lovable-uploads/db6f83fd-8829-474f-8803-aa52919a348f.png',
+    image: `${HOST}lovable-uploads/sika-top-seal-107-thumbnail.webp`,
     gallery: [
-      '/lovable-uploads/db6f83fd-8829-474f-8803-aa52919a348f.png',
+      `${HOST}lovable-uploads/sikatop-seal-107-gallery-1.jpg`,
+      `${HOST}lovable-uploads/bao-bot-107.jpg`,
     ],
     description: 'Vữa chống thấm gốc xi măng, copolymer hai thành phần cho bể chứa nước, hồ bơi, ban công, nhà vệ sinh và các hạng mục công trình khác.',
     price: 890000,
@@ -75,7 +78,7 @@ export const products: Product[] = [
     id: '3',
     name: 'Sikagrout 214-11',
     slug: 'sikagrout-214-11',
-    image: '/lovable-uploads/51cf67cf-603c-4535-a44a-81d6f7d48922.png',
+    image: `${HOST}lovable-uploads/51cf67cf-603c-4535-a44a-81d6f7d48922.png`,
     description: 'Vữa không co ngót, tự san phẳng dùng để đổ bù, đổ gối, đổ chân cột, đổ móng máy và các kết cấu đặc biệt khác.',
     price: 315000,
     category: 'Vữa',
@@ -99,7 +102,7 @@ export const products: Product[] = [
     id: '4',
     name: 'Sikament R-7N',
     slug: 'sikament-r-7n',
-    image: '/lovable-uploads/51cf67cf-603c-4535-a44a-81d6f7d48922.png',
+    image: `${HOST}lovable-uploads/51cf67cf-603c-4535-a44a-81d6f7d48922.png`,
     description: 'Phụ gia hóa dẻo cao cấp, kéo dài thời gian ninh kết cho bê tông và vữa, giúp tăng cường độ và giảm nước trộn đáng kể.',
     price: 420000,
     category: 'Phụ gia',
@@ -122,7 +125,7 @@ export const products: Product[] = [
     id: '5',
     name: 'Sikaproof Membrane',
     slug: 'sikaproof-membrane',
-    image: '/lovable-uploads/51cf67cf-603c-4535-a44a-81d6f7d48922.png',
+    image: `${HOST}lovable-uploads/51cf67cf-603c-4535-a44a-81d6f7d48922.png`,
     description: 'Màng chống thấm polyurethane một thành phần, đàn hồi cao, dùng để chống thấm cho sân thượng, mái, ban công và nhà vệ sinh.',
     price: 650000,
     category: 'Chống thấm',
@@ -146,7 +149,7 @@ export const products: Product[] = [
     id: '6',
     name: 'Sika ColorLite',
     slug: 'sika-colorlite',
-    image: '/lovable-uploads/51cf67cf-603c-4535-a44a-81d6f7d48922.png',
+    image: `${HOST}lovable-uploads/51cf67cf-603c-4535-a44a-81d6f7d48922.png`,
     description: 'Sơn phủ bảo vệ gốc acrylic, chống thấm, trang trí cho bề mặt bê tông và vữa xi măng ở trong và ngoài nhà.',
     price: 540000,
     category: 'Sơn phủ',
@@ -170,7 +173,7 @@ export const products: Product[] = [
     id: '7',
     name: 'Sikaflex 11FC',
     slug: 'sikaflex-11fc',
-    image: '/lovable-uploads/51cf67cf-603c-4535-a44a-81d6f7d48922.png',
+    image: `${HOST}lovable-uploads/51cf67cf-603c-4535-a44a-81d6f7d48922.png`,
     description: 'Keo đàn hồi một thành phần gốc polyurethane để trám khe, dán kết cấu và chống thấm.',
     price: 185000,
     category: 'Keo',
@@ -193,7 +196,7 @@ export const products: Product[] = [
     id: '8',
     name: 'SikaBond Sikaflex',
     slug: 'sikabond-sikaflex',
-    image: '/lovable-uploads/51cf67cf-603c-4535-a44a-81d6f7d48922.png',
+    image: `${HOST}lovable-uploads/51cf67cf-603c-4535-a44a-81d6f7d48922.png`,
     description: 'Keo dán đàn hồi một thành phần đa năng sử dụng cho nhiều ứng dụng như dán gạch, gỗ, kim loại và các vật liệu xây dựng khác.',
     price: 205000,
     category: 'Keo',

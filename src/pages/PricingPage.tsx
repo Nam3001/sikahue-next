@@ -4,7 +4,6 @@ import { useState, useEffect } from 'react';
 import { Search } from 'lucide-react';
 import Layout from '@/components/Layout';
 import { products } from '@/data/products';
-import Image from 'next/image';
 
 const categories = [
   "Tất cả",
@@ -113,7 +112,7 @@ const PricingPage = () => {
                   >
                     <td className="py-3 px-4 border-b border-gray-200">
                       <div className="flex items-center">
-                        <Image
+                        <img
                           src={product.image} 
                           alt={product.name} 
                           className="w-12 h-12 object-cover mr-3"

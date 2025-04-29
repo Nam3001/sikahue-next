@@ -1,7 +1,7 @@
 
 import Layout from '@/components/Layout';
+import { HOST } from '@/data/common';
 import { Star } from 'lucide-react';
-import Image from 'next/image';
 
 const AboutPage = () => {
   return (
@@ -41,8 +41,8 @@ const AboutPage = () => {
             </div>
             
             <div className="order-first lg:order-last animate-fade-in">
-              <Image
-                src="/lovable-uploads/d079693a-acfe-4966-a8a7-5e6dd6c5b59a.png"
+              <img
+                src={`${HOST}/lovable-uploads/d079693a-acfe-4966-a8a7-5e6dd6c5b59a.png`}
                 alt="Sika Vietnam Logo"
                 className="w-3/4 mx-auto"
               />

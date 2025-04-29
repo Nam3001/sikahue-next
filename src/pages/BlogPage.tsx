@@ -4,7 +4,6 @@ import Link from 'next/link';
 import { Search, ArrowRight } from 'lucide-react';
 import Layout from '@/components/Layout';
 import { blogPosts } from '@/data/blog';
-import Image from 'next/image';
 
 const categories = [
   "Tất cả",
@@ -109,7 +108,7 @@ const BlogPage = () => {
                 style={{ animationDelay: `${0.1 * index}s` }}
               >
                 <Link href={`/tin-tuc/${post.slug}`}>
-                  <Image
+                  <img
                     src={post.image} 
                     alt={post.title} 
                     className="w-full h-56 object-cover object-center"

@@ -5,7 +5,7 @@ import Layout from '@/components/Layout';
 import ProductCard from '@/components/ProductCard';
 import { getPopularProducts } from '@/data/products';
 import { getLatestBlogPosts } from '@/data/blog';
-import Image from 'next/image';
+import { HOST } from '@/data/common';
 
 const Index = () => {
   const popularProducts = getPopularProducts();
@@ -41,8 +41,8 @@ const Index = () => {
               </div>
             </div>
             <div className="w-full md:w-1/2 mt-10 md:mt-0 animate-fade-in" style={{ animationDelay: '0.6s' }}>
-              <Image 
-                src="/lovable-uploads/d079693a-acfe-4966-a8a7-5e6dd6c5b59a.png" 
+              <img
+                src={`${HOST}/lovable-uploads/d079693a-acfe-4966-a8a7-5e6dd6c5b59a.png`}
                 alt="Sika Vietnam Logo" 
                 className="w-3/4 md:w-1/2 mx-auto animate-bounce-slow"
               />
@@ -174,7 +174,7 @@ const Index = () => {
                 style={{ animationDelay: `${0.2 * index}s` }}
               >
                 <Link href={`/tin-tuc/${post.slug}`}>
-                  <Image
+                  <img
                     src={post.image} 
                     alt={post.title} 
                     className="w-full h-48 object-cover"

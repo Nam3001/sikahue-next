@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Phone } from 'lucide-react';
-import Image from 'next/image';
+import { HOST } from '@/data/common';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -38,8 +38,8 @@ const Navbar = () => {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <Link href="/" className="flex items-center">
-            <Image
-              src="/lovable-uploads/d079693a-acfe-4966-a8a7-5e6dd6c5b59a.png" 
+            <img
+              src={`${HOST}lovable-uploads/d079693a-acfe-4966-a8a7-5e6dd6c5b59a.png`}
               alt="Sika Vietnam Logo" 
               className="h-12 w-auto"
             />

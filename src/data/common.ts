@@ -1,0 +1,1 @@
+export const HOST = "https://nam3001.github.io/sikahue-next/"
