@@ -11,7 +11,7 @@ const Footer = () => {
           {/* About Column */}
           <div className="space-y-4 animate-fade-in" style={{ animationDelay: '0.1s' }}>
             <div className="flex items-center space-x-2">
-              <img src={`${HOST}lovable-uploads/d079693a-acfe-4966-a8a7-5e6dd6c5b59a.png`} alt="Sika Vietnam Logo" className="h-12" />
+              <img src={`${HOST}lovable-uploads/d079693a-acfe-4966-a8a7-5e6dd6c5b59a.png`} alt="Sika Vietnam Logo" className="h-12" loading="lazy" />
               <h3 className="text-xl font-bold">Sika Vietnam</h3>
             </div>
             <p className="text-gray-400">

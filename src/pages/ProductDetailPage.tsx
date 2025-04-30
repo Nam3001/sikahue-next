@@ -80,6 +80,7 @@ const ProductDetailPage = () => {
                 src={product.image}
                 alt={product.name}
                 className="w-full h-96 object-contain object-center animate-fade-in"
+                loading="lazy"
               />
             </div>
             {product.gallery && product.gallery.length > 1 && (
@@ -90,6 +91,7 @@ const ProductDetailPage = () => {
                       src={image}
                       alt={`${product.name} - Ảnh ${index + 1}`}
                       className="w-full h-24 object-cover object-center"
+                      loading="lazy"
                     />
                   </div>
                 ))}

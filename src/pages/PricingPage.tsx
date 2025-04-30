@@ -116,6 +116,7 @@ const PricingPage = () => {
                           src={product.image} 
                           alt={product.name} 
                           className="w-12 h-12 object-cover mr-3"
+                          loading="lazy"
                         />
                         <a href={`/san-pham/${product.slug}`} className="font-medium text-gray-800 hover:text-sika-red">
                           {product.name}

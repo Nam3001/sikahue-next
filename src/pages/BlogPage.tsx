@@ -112,6 +112,7 @@ const BlogPage = () => {
                     src={post.image} 
                     alt={post.title} 
                     className="w-full h-56 object-cover object-center"
+                    loading="lazy"
                   />
                 </Link>
                 <div className="p-6">

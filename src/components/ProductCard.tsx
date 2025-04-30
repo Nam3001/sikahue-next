@@ -24,6 +24,7 @@ const ProductCard = ({ name, image, price, slug, isNew, isPopular }: ProductCard
             src={image} 
             alt={name} 
             className="w-full h-64 object-contain object-center transform group-hover:scale-105 transition duration-500"
+            loading="lazy"
           />
         </Link>
         {isNew && (

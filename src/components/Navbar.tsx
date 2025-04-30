@@ -42,6 +42,7 @@ const Navbar = () => {
               src={`${HOST}lovable-uploads/d079693a-acfe-4966-a8a7-5e6dd6c5b59a.png`}
               alt="Sika Vietnam Logo" 
               className="h-12 w-auto"
+              loading="lazy"
             />
           </Link>
 

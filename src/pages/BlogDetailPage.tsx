@@ -101,6 +101,7 @@ const BlogDetailPage = () => {
             src={post.image}
             alt={post.title}
             className="w-full h-auto rounded-lg shadow-md"
+            loading="lazy"
           />
         </div>
         
@@ -135,6 +136,7 @@ const BlogDetailPage = () => {
                       src={recentPost.image} 
                       alt={recentPost.title} 
                       className="w-full h-40 object-cover"
+                      loading="lazy"
                     />
                   </Link>
                   <div className="p-4">

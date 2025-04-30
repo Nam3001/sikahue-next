@@ -1,9 +1,0 @@
-# *
-User-agent: *
-Allow: /
-
-# Host
-Host: https://nam3001.github.io/sikahue-next/
-
-# Sitemaps
-Sitemap: https://nam3001.github.io/sikahue-next/sitemap.xml

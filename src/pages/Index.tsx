@@ -45,6 +45,7 @@ const Index = () => {
                 src={`${HOST}/lovable-uploads/d079693a-acfe-4966-a8a7-5e6dd6c5b59a.png`}
                 alt="Sika Vietnam Logo" 
                 className="w-3/4 md:w-1/2 mx-auto animate-bounce-slow"
+                loading="lazy"
               />
             </div>
           </div>
@@ -178,6 +179,7 @@ const Index = () => {
                     src={post.image} 
                     alt={post.title} 
                     className="w-full h-48 object-cover"
+                    loading="lazy"
                   />
                 </Link>
                 <div className="p-6">
