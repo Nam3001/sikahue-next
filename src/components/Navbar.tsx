@@ -101,32 +101,11 @@ const Navbar = () => {
               Trang Chủ
             </Link>
             <Link 
-              href="/gioi-thieu" 
-              onClick={() => setIsMobileMenuOpen(false)}
-              className={`block py-2 px-4 rounded ${isActive('/gioi-thieu') ? 'bg-gray-100 text-sika-red' : ''}`}
-            >
-              Giới Thiệu
-            </Link>
-            <Link 
               href="/san-pham" 
               onClick={() => setIsMobileMenuOpen(false)}
               className={`block py-2 px-4 rounded ${isActive('/san-pham') ? 'bg-gray-100 text-sika-red' : ''}`}
             >
               Sản Phẩm
-            </Link>
-            <Link 
-              href="/bang-gia" 
-              onClick={() => setIsMobileMenuOpen(false)}
-              className={`block py-2 px-4 rounded ${isActive('/bang-gia') ? 'bg-gray-100 text-sika-red' : ''}`}
-            >
-              Bảng Giá
-            </Link>
-            <Link 
-              href="/tin-tuc" 
-              onClick={() => setIsMobileMenuOpen(false)}
-              className={`block py-2 px-4 rounded ${isActive('/tin-tuc') ? 'bg-gray-100 text-sika-red' : ''}`}
-            >
-              Tin Tức
             </Link>
             <Link 
               href="/lien-he" 

@@ -172,7 +172,7 @@ const Index = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <img src={`${HOST}/lovable-uploads/cbi-giao.jpg`} alt="Hàng chuẩn bị giao" />
-            <img src={`${HOST}/lovable-uploads/certificate.PNG`} alt="Chứng nhận của Công ty" />
+            <img src={`${HOST}/lovable-uploads/certificate.PNG`} style={{ height: "100%"}} alt="Chứng nhận của Công ty" />
             <img src={`${HOST}/lovable-uploads/kho-cty-2.jpg`} alt="Hình ảnh kho công ty" />
           </div>
         </div>
