@@ -3,6 +3,7 @@
 import { Phone, Mail, MapPin } from 'lucide-react';
 import Layout from '@/components/Layout';
 import ZaloButton from "@/components/ZaloButton";
+import { HOST } from '@/data/common';
 
 const ContactPage = () => {  
   return (
@@ -96,7 +97,7 @@ const ContactPage = () => {
                   </a>
 
                   <a href="https://zalo.me/0886880359" className="bg-gray-100 hover:bg-gray-200 p-2 rounded-full transition-colors">
-                    <img src="/lovable-uploads/icon_zalo_black.png" className="w-6 h-6 opacity-80 hover:opacity-100" alt="" />
+                    <img src={`${HOST}/lovable-uploads/icon_zalo_black.png`} className="w-6 h-6 opacity-80 hover:opacity-100" alt="" />
                   </a>
                 </div>
               </div>
@@ -104,7 +105,7 @@ const ContactPage = () => {
 
             {/* Map Section */}
             <div className="md:col-span-2 animate-fade-in">
-              <section className="bg-gray-50 animate-fade-in" style={{ animationDelay: '0.4s', height: "100%" }}>
+              <section className="bg-gray-50 animate-fade-in" style={{ animationDelay: '0.4s', height: "100%", minHeight: "400px" }}>
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-4" style={{ height: "calc(100% - 64px - 32px)"}}>
                   <h2 className="text-2xl font-bold mb-8 text-center">Vị Trí Của Chúng Tôi</h2>
                   <div className="rounded-lg overflow-hidden shadow-lg" style={{ height: "100%"}}>
