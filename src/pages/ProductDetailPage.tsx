@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { useParams } from 'next/navigation';
-import { ArrowLeft, Minus, Plus, Star } from 'lucide-react';
+import { ArrowLeft, Star } from 'lucide-react';
 import Layout from '@/components/Layout';
 import ProductCard from '@/components/ProductCard';
 import { getProductBySlug, getRelatedProducts } from '@/data/products';
@@ -14,7 +14,6 @@ const ProductDetailPage = () => {
   const slugString = Array.isArray(slug) ? slug[0] : slug
 
   const product = getProductBySlug(slugString || '');
-  const [quantity, setQuantity] = useState(1);
   const [activeTab, setActiveTab] = useState('description');
   const [productImg, setProductImg] = useState(product?.image)
   
@@ -38,17 +37,7 @@ const ProductDetailPage = () => {
       </Layout>
     );
   }
-  
-  const decreaseQuantity = () => {
-    if (quantity > 1) {
-      setQuantity(quantity - 1);
-    }
-  };
-  
-  const increaseQuantity = () => {
-    setQuantity(quantity + 1);
-  };
-  
+
   const formatPrice = (price: number) => {
     return new Intl.NumberFormat('vi-VN').format(price);
   };
@@ -154,34 +143,13 @@ const ProductDetailPage = () => {
             
             {/* Add to Cart */}
             <div className="flex flex-col sm:flex-row items-center mb-8">
-              <div className="flex items-center border border-gray-300 rounded-md overflow-hidden mb-4 sm:mb-0 sm:mr-4">
-                <button
-                  type="button"
-                  className="p-2 bg-gray-100 hover:bg-gray-200 transition-colors"
-                  onClick={decreaseQuantity}
-                >
-                  <Minus className="w-4 h-4" />
-                </button>
-                <input
-                  type="text"
-                  value={quantity}
-                  readOnly
-                  className="w-12 text-center border-0 focus:ring-0"
-                />
-                <button
-                  type="button"
-                  className="p-2 bg-gray-100 hover:bg-gray-200 transition-colors"
-                  onClick={increaseQuantity}
-                >
-                  <Plus className="w-4 h-4" />
-                </button>
-              </div>
-              <button
-                type="button"
-                className="w-full sm:w-auto px-6 py-3 bg-sika-red hover:bg-red-700 text-white rounded-md transition-colors"
+              <p className='mr-3 text-gray-600 mb-2 md:mb-0'>Còn hàng</p>
+              <a
+                href="tel:0886880359"
+                className="w-full sm:w-auto px-6 py-3 bg-sika-red hover:bg-red-700 text-white px-8 py-3 rounded-md font-medium transition-colors" style={{ cursor: "pointer" }}
               >
-                Thêm vào giỏ hàng
-              </button>
+                Liên hệ đặt hàng
+              </a>
             </div>
             
             {/* Features */}
