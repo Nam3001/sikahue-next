@@ -151,8 +151,8 @@ export const products: Product[] = [
     id: '7',
     name: 'Sikalastic®-590',
     slug: 'sikalastic-590',
-    image: `${HOST}/lovable-uploads/sikalastic-590.jpg`,
-    gallery: [`${HOST}/lovable-uploads/sikalastic-590.jpg`, `${HOST}/lovable-uploads/sika-lastic590.jpg`],
+    image: `${HOST}/lovable-uploads/Sikalastic-590.jpg`,
+    gallery: [`${HOST}/lovable-uploads/Sikalastic-590.jpg`, `${HOST}/lovable-uploads/sika-lastic590.jpg`],
     description: 'Màng chống thấm polyurethane gốc nước, một thành phần, đàn hồi cao, thích hợp cho mái, sân thượng, ban công, nhà vệ sinh và các khu vực cần chống thấm bền vững.',
     category: 'Chống thấm',
     features: [

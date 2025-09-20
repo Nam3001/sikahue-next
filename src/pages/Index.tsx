@@ -4,14 +4,11 @@ import { ArrowRight, Star } from 'lucide-react';
 import Layout from '@/components/Layout';
 import ProductCard from '@/components/ProductCard';
 import { getPopularProducts } from '@/data/products';
-import { getLatestBlogPosts } from '@/data/blog';
 import { HOST } from '@/data/common';
 import ZaloButton from '@/components/ZaloButton';
 
 const Index = () => {
   const popularProducts = getPopularProducts();
-  const latestPosts = getLatestBlogPosts();
-  
   return (
     <Layout>
       {/* Hero Section */}
@@ -169,51 +166,14 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center mb-8">
             <h2 className="text-3xl md:text-4xl font-bold">
-              Tin Tức <span className="text-sika-red">Mới Nhất</span>
+              Một Số Hình Ảnh Của <span className="text-sika-red">Chúng Tôi</span>
             </h2>
-            <Link href="/tin-tuc" className="text-sika-red hover:text-red-700 flex items-center space-x-1 font-medium">
-              <span>Xem tất cả</span>
-              <ArrowRight className="h-5 w-5" />
-            </Link>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {latestPosts.map((post, index) => (
-              <div 
-                key={post.id} 
-                className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-all duration-300 animate-fade-in"
-                style={{ animationDelay: `${0.2 * index}s` }}
-              >
-                <Link href={`/tin-tuc/${post.slug}`}>
-                  <img
-                    src={post.image} 
-                    alt={post.title} 
-                    className="w-full h-48 object-cover"
-                    loading="lazy"
-                  />
-                </Link>
-                <div className="p-6">
-                  <Link href={`/tin-tuc/${post.slug}`}>
-                    <h3 className="text-xl font-bold mb-2 hover:text-sika-red transition-colors">
-                      {post.title}
-                    </h3>
-                  </Link>
-                  <p className="text-gray-500 text-sm mb-4">
-                    {new Date(post.date).toLocaleDateString('vi-VN')} | {post.category}
-                  </p>
-                  <p className="text-gray-600 mb-4 line-clamp-3">
-                    {post.excerpt}
-                  </p>
-                  <Link 
-                    href={`/tin-tuc/${post.slug}`}
-                    className="text-sika-red hover:text-red-700 font-medium flex items-center"
-                  >
-                    <span>Đọc tiếp</span>
-                    <ArrowRight className="h-5 w-5 ml-1" />
-                  </Link>
-                </div>
-              </div>
-            ))}
+            <img src={`${HOST}/lovable-uploads/cbi-giao.jpg`} alt="hàng chuẩn bị giao" />
+            <img src={`${HOST}/lovable-uploads/sika-top-seal-107.jpg`} alt="hàng chất lên xe" />
+            <img src={`${HOST}/lovable-uploads/kho-cty-2.jpg`} alt="hình ảnh kho công ty" />
           </div>
         </div>
       </section>

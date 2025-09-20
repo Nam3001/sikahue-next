@@ -38,7 +38,7 @@ const ContactPage = () => {
                   <div className="ml-4">
                     <h3 className="font-medium">Địa Chỉ</h3>
                     <p className="text-gray-600 mt-1">
-                      Kiệt 1, Tổ dân Phố Xuân Hoà, phường Vĩ Dạ, TP Huế
+                      Kiệt 1, Tổ dân Phố Xuân Hoà, Phường Vỹ Dạ, TP Huế
                     </p>
                   </div>
                 </div>
@@ -93,6 +93,10 @@ const ContactPage = () => {
                     <svg className="w-6 h-6 text-gray-700" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                       <path fillRule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clipRule="evenodd"></path>
                     </svg>
+                  </a>
+
+                  <a href="https://zalo.me/0886880359" className="bg-gray-100 hover:bg-gray-200 p-2 rounded-full transition-colors">
+                    <img src="/lovable-uploads/icon_zalo_black.png" className="w-6 h-6 opacity-80 hover:opacity-100" alt="" />
                   </a>
                 </div>
               </div>

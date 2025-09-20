@@ -61,12 +61,6 @@ const Navbar = () => {
               Sản Phẩm
             </Link>
             <Link 
-              href="/tin-tuc" 
-              className={`navigation-link ${isActive('/tin-tuc') ? 'active-link' : ''}`}
-            >
-              Tin Tức
-            </Link>
-            <Link 
               href="/lien-he" 
               className={`navigation-link ${isActive('/lien-he') ? 'active-link' : ''}`}
             >
