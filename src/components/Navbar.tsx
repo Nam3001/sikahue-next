@@ -55,22 +55,10 @@ const Navbar = () => {
               Trang Chủ
             </Link>
             <Link 
-              href="/gioi-thieu" 
-              className={`navigation-link ${isActive('/gioi-thieu') ? 'active-link' : ''}`}
-            >
-              Giới Thiệu
-            </Link>
-            <Link 
               href="/san-pham" 
               className={`navigation-link ${isActive('/san-pham') ? 'active-link' : ''}`}
             >
               Sản Phẩm
-            </Link>
-            <Link 
-              href="/bang-gia" 
-              className={`navigation-link ${isActive('/bang-gia') ? 'active-link' : ''}`}
-            >
-              Bảng Giá
             </Link>
             <Link 
               href="/tin-tuc" 
