@@ -43,7 +43,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center space-x-3">
                 <Mail size={20} className="flex-shrink-0 text-sika-yellow" />
-                <a href="mailto:contact@sikavietnam.com" className="text-gray-400 hover:text-white transition-colors">contact@sikavietnam.com</a>
+                <a href="mailto:bacmientrung8317@gmail.com" className="text-gray-400 hover:text-white transition-colors">bacmientrung8317@gmail.com</a>
               </li>
             </ul>
           </div>

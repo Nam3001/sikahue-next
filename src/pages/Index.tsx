@@ -172,8 +172,11 @@ const Index = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <img src={`${HOST}/lovable-uploads/cbi-giao.jpg`} alt="Hàng chuẩn bị giao" />
+            <img src={`${HOST}/lovable-uploads/bien-hieu.jpg`} style={{ height: "100%"}} alt="Biển hiệu" />
             <img src={`${HOST}/lovable-uploads/certificate.PNG`} style={{ height: "100%"}} alt="Chứng nhận của Công ty" />
             <img src={`${HOST}/lovable-uploads/kho-cty-2.jpg`} alt="Hình ảnh kho công ty" />
+            <img src={`${HOST}/lovable-uploads/sika-top-seal-107.jpg`} alt="Hàng chất lên xe" />
+            <img src={`${HOST}/lovable-uploads/sika-lastic590-2.jpg`} alt="Hàng của đại lý" />
           </div>
         </div>
       </section>

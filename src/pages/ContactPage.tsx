@@ -67,8 +67,8 @@ const ContactPage = () => {
                   <div className="ml-4">
                     <h3 className="font-medium">Email</h3>
                     <p className="text-gray-600 mt-1">
-                      <a href="mailto:contact@sikavietnam.com" className="hover:text-sika-red transition-colors">
-                        contact@sikavietnam.com
+                      <a href="mailto:bacmientrung8317@gmail.com" className="hover:text-sika-red transition-colors">
+                        bacmientrung8317@gmail.com
                       </a>
                     </p>
                   </div>
