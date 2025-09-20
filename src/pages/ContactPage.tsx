@@ -1,48 +1,10 @@
 'use client'
 
-import { useState } from 'react';
-import { toast } from 'sonner';
 import { Phone, Mail, MapPin } from 'lucide-react';
 import Layout from '@/components/Layout';
 import ZaloButton from "@/components/ZaloButton";
 
-const ContactPage = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    subject: '',
-    message: ''
-  });
-  
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({
-      ...prev,
-      [name]: value
-    }));
-  };
-  
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    
-    // Simulate form submission
-    setTimeout(() => {
-      setIsSubmitting(false);
-      toast.success('Gửi thông tin thành công! Chúng tôi sẽ liên hệ lại với bạn sớm.');
-      setFormData({
-        name: '',
-        email: '',
-        phone: '',
-        subject: '',
-        message: ''
-      });
-    }, 1500);
-  };
-  
+const ContactPage = () => {  
   return (
     <Layout>
       {/* Page Header */}
