@@ -1,4 +1,7 @@
 {
   "/page": "app/page.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js"
+  "/lien-he/page": "app/lien-he/page.js",
+  "/san-pham/[slug]/page": "app/san-pham/[slug]/page.js",
+  "/tin-tuc/page": "app/tin-tuc/page.js",
+  "/san-pham/page": "app/san-pham/page.js"
 }

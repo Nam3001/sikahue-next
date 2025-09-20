@@ -47,11 +47,11 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-start space-x-3">
                 <MapPin size={20} className="flex-shrink-0 text-sika-yellow mt-1" />
-                <span className="text-gray-400">219 Trần Phú, Huế, Thừa Thiên Huế</span>
+                <span className="text-gray-400">Kiệt 1, Tổ dân Phố Xuân Hoà, phường Vĩ Dạ, TP Huế</span>
               </li>
               <li className="flex items-center space-x-3">
                 <Phone size={20} className="flex-shrink-0 text-sika-yellow" />
-                <a href="tel:0948612300" className="text-gray-400 hover:text-white transition-colors">0948612300</a>
+                <a href="tel:0886880359" className="text-gray-400 hover:text-white transition-colors">0886880359</a>
               </li>
               <li className="flex items-center space-x-3">
                 <Mail size={20} className="flex-shrink-0 text-sika-yellow" />
@@ -107,9 +107,7 @@ const Footer = () => {
           <div className="space-y-4 animate-fade-in" style={{ animationDelay: '0.4s' }}>
             <h3 className="text-xl font-bold">Giờ Làm Việc</h3>
             <p className="text-gray-400">
-              Thứ 2 - Thứ 6: 8:00 - 17:00<br />
-              Thứ 7: 8:00 - 12:00<br />
-              Chủ nhật: Nghỉ
+              Thứ 2 - Chủ Nhật: 07:30 - 17:30<br />
             </p>
           </div>
         </div>

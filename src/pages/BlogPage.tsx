@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { Search, ArrowRight } from 'lucide-react';
 import Layout from '@/components/Layout';
 import { blogPosts } from '@/data/blog';
+import ZaloButton from '@/components/ZaloButton';
 
 const categories = [
   "Tất cả",
@@ -147,6 +148,11 @@ const BlogPage = () => {
             </p>
           </div>
         )}
+      </div>
+      
+      {/* Contact Form */}
+      <div className="md:col-span-2 animate-fade-in" style={{ animationDelay: '0.2s' }}>
+        <ZaloButton zaloId="0886880359"/>
       </div>
     </Layout>
   );

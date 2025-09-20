@@ -27,7 +27,6 @@ export const products: Product[] = [
       `${HOST}lovable-uploads/sika-latex-th-25l-gallery-1.jpg`,
     ],
     description: 'Phụ gia chống thấm và tác nhân kết dính cho vữa và bê tông. Là một nhũ tương tổng hợp nhằm cải thiện phẩm chất của vữa trộn xi măng.',
-    price: 195000,
     category: 'Chống thấm',
     features: [
       'Tăng cường độ bám dính',
@@ -55,8 +54,6 @@ export const products: Product[] = [
       `${HOST}lovable-uploads/bao-bot-107.jpg`,
     ],
     description: 'Vữa chống thấm gốc xi măng, copolymer hai thành phần cho bể chứa nước, hồ bơi, ban công, nhà vệ sinh và các hạng mục công trình khác.',
-    price: 890000,
-    oldPrice: 1050000,
     category: 'Chống thấm',
     features: [
       'Dễ sử dụng, chỉ cần trộn và quét',
@@ -78,9 +75,9 @@ export const products: Product[] = [
     id: '3',
     name: 'Sikagrout 214-11',
     slug: 'sikagrout-214-11',
-    image: `${HOST}lovable-uploads/51cf67cf-603c-4535-a44a-81d6f7d48922.png`,
+    image: `${HOST}/lovable-uploads/SikaGrout-214-11.jpg`,
+    gallery: [`${HOST}/lovable-uploads/SikaGrout-214-11.jpg`, `${HOST}/lovable-uploads/sika-grout-214-11.jpg`],
     description: 'Vữa không co ngót, tự san phẳng dùng để đổ bù, đổ gối, đổ chân cột, đổ móng máy và các kết cấu đặc biệt khác.',
-    price: 315000,
     category: 'Vữa',
     features: [
       'Cường độ cao',
@@ -96,38 +93,18 @@ export const products: Product[] = [
       'Đóng gói': 'Bao 25 kg',
       'Bảo quản': '6 tháng trong điều kiện khô mát'
     },
-    isNew: true
-  },
-  {
-    id: '4',
-    name: 'Sikament R-7N',
-    slug: 'sikament-r-7n',
-    image: `${HOST}lovable-uploads/51cf67cf-603c-4535-a44a-81d6f7d48922.png`,
-    description: 'Phụ gia hóa dẻo cao cấp, kéo dài thời gian ninh kết cho bê tông và vữa, giúp tăng cường độ và giảm nước trộn đáng kể.',
-    price: 420000,
-    category: 'Phụ gia',
-    features: [
-      'Tăng độ linh động của bê tông',
-      'Giảm nước trộn đáng kể',
-      'Tăng cường độ cuối cùng',
-      'Giảm co ngót',
-      'Không chứa clorua, không ăn mòn cốt thép'
-    ],
-    specifications: {
-      'Dạng': 'Chất lỏng màu nâu đậm',
-      'Khối lượng riêng': '~1.18 kg/lít',
-      'Liều lượng': '0.6 - 1.5% theo khối lượng xi măng',
-      'Đóng gói': 'Can 5kg, 25kg, 200kg',
-      'Bảo quản': '12 tháng trong điều kiện khô mát'
-    }
+    isNew: true,
+    isPopular: true
   },
   {
     id: '5',
     name: 'Sikaproof Membrane',
     slug: 'sikaproof-membrane',
-    image: `${HOST}lovable-uploads/51cf67cf-603c-4535-a44a-81d6f7d48922.png`,
+    image: `${HOST}/lovable-uploads/Sikaproof-Membrane-20Kg.jpg`,
+    gallery: [
+      `${HOST}/lovable-uploads/Sikaproof-Membrane-20Kg.jpg`,
+    ],
     description: 'Màng chống thấm polyurethane một thành phần, đàn hồi cao, dùng để chống thấm cho sân thượng, mái, ban công và nhà vệ sinh.',
-    price: 650000,
     category: 'Chống thấm',
     features: [
       'Một thành phần, dễ thi công',
@@ -147,75 +124,54 @@ export const products: Product[] = [
   },
   {
     id: '6',
-    name: 'Sika ColorLite',
-    slug: 'sika-colorlite',
-    image: `${HOST}lovable-uploads/51cf67cf-603c-4535-a44a-81d6f7d48922.png`,
-    description: 'Sơn phủ bảo vệ gốc acrylic, chống thấm, trang trí cho bề mặt bê tông và vữa xi măng ở trong và ngoài nhà.',
-    price: 540000,
-    category: 'Sơn phủ',
+    name: 'Sikalastic®-110',
+    slug: 'sikalastic-110',
+    image: `${HOST}/lovable-uploads/sikalastic-110.jpg`,
+    gallery: [ `${HOST}/lovable-uploads/sikalastic-110.jpg`, ],
+    description: 'Màng chống thấm polyurethane lai bitumen gốc nước, một thành phần, đàn hồi cao, thi công trực tiếp lên bề mặt bê tông ẩm, tạo lớp màng liền mạch chống thấm hiệu quả cho mái, sàn và công trình ngầm.',
+    category: 'Chống thấm',
     features: [
-      'Chống thấm nước',
-      'Chống tia UV tốt',
-      'Không độc hại',
-      'Mỹ quan đẹp',
-      'Dễ lau chùi, bảo trì'
+      'Một thành phần, thi công dễ dàng bằng chổi, rulo hoặc phun',
+      'Đàn hồi cao, khả năng che phủ vết nứt tốt',
+      'Có thể thi công trên bề mặt bê tông ẩm',
+      'Không mối nối, tạo màng liền mạch',
+      'VOC thấp, thân thiện môi trường'
     ],
     specifications: {
-      'Dạng': 'Chất lỏng đặc, nhiều màu',
-      'Khối lượng riêng': '~1.3 kg/lít',
-      'Định mức sử dụng': '~0.2 - 0.25 kg/m²/lớp',
+      'Dạng': 'Chất lỏng gốc nước màu đen',
+      'Khối lượng riêng': '~1.08 kg/lít',
+      'Định mức sử dụng': '~1.5 kg/m²/2 lớp (không gia cường)',
       'Đóng gói': 'Thùng 20 kg',
-      'Bảo quản': '12 tháng trong điều kiện khô mát'
+      'Bảo quản': '9–12 tháng trong điều kiện khô mát, chưa mở nắp'
     },
+    isNew: true,
     isPopular: true
   },
   {
     id: '7',
-    name: 'Sikaflex 11FC',
-    slug: 'sikaflex-11fc',
-    image: `${HOST}lovable-uploads/51cf67cf-603c-4535-a44a-81d6f7d48922.png`,
-    description: 'Keo đàn hồi một thành phần gốc polyurethane để trám khe, dán kết cấu và chống thấm.',
-    price: 185000,
-    category: 'Keo',
+    name: 'Sikalastic®-590',
+    slug: 'sikalastic-590',
+    image: `${HOST}/lovable-uploads/sikalastic-590.jpg`,
+    gallery: [`${HOST}/lovable-uploads/sikalastic-590.jpg`, `${HOST}/lovable-uploads/sika-lastic590.jpg`],
+    description: 'Màng chống thấm polyurethane gốc nước, một thành phần, đàn hồi cao, thích hợp cho mái, sân thượng, ban công, nhà vệ sinh và các khu vực cần chống thấm bền vững.',
+    category: 'Chống thấm',
     features: [
-      'Đàn hồi cao',
-      'Không chảy xệ',
-      'Độ bám dính tốt với nhiều loại vật liệu',
-      'Chịu được thời tiết và hóa chất',
-      'Có thể sơn phủ lên được'
+      'Một thành phần, dễ thi công bằng rulo, chổi hoặc phun',
+      'Khả năng đàn hồi cao, che phủ vết nứt tốt',
+      'Chống tia UV, chịu thời tiết tốt, thích hợp cho mái hở',
+      'VOC thấp, thân thiện môi trường',
+      'Bám dính tốt trên nhiều bề mặt'
     ],
     specifications: {
-      'Dạng': 'Keo đặc màu trắng, xám, đen',
-      'Khô bề mặt': '~ 60 phút',
-      'Độ cứng shore A': '~ 37',
-      'Đóng gói': 'Tuýp 300ml, Xúc xích 600ml',
-      'Bảo quản': '15 tháng trong điều kiện khô mát'
-    }
-  },
-  {
-    id: '8',
-    name: 'SikaBond Sikaflex',
-    slug: 'sikabond-sikaflex',
-    image: `${HOST}lovable-uploads/51cf67cf-603c-4535-a44a-81d6f7d48922.png`,
-    description: 'Keo dán đàn hồi một thành phần đa năng sử dụng cho nhiều ứng dụng như dán gạch, gỗ, kim loại và các vật liệu xây dựng khác.',
-    price: 205000,
-    category: 'Keo',
-    features: [
-      'Độ bám dính tốt với nhiều loại vật liệu',
-      'Độ đàn hồi cao',
-      'Chịu thời tiết và tia UV tốt',
-      'Không chứa dung môi',
-      'Dễ thi công'
-    ],
-    specifications: {
-      'Dạng': 'Keo đặc màu be',
-      'Khô bề mặt': '~ 30-40 phút',
-      'Cường độ kéo': '~ 1.5 N/mm²',
-      'Đóng gói': 'Tuýp 300ml, Xúc xích 600ml',
-      'Bảo quản': '12 tháng trong điều kiện khô mát'
+      'Dạng': 'Chất lỏng gốc nước, màu trắng hoặc xám',
+      'Khối lượng riêng': '~1.36 kg/lít',
+      'Định mức sử dụng': '~1.3–1.5 kg/m²/2 lớp (không gia cường)',
+      'Đóng gói': 'Thùng 20 kg',
+      'Bảo quản': '12 tháng trong điều kiện khô mát, chưa mở nắp'
     },
-    isPopular: true
+    isNew: true
   }
+
 ];
 
 export const getProductBySlug = (slug: string): Product | undefined => {

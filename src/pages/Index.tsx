@@ -6,6 +6,7 @@ import ProductCard from '@/components/ProductCard';
 import { getPopularProducts } from '@/data/products';
 import { getLatestBlogPosts } from '@/data/blog';
 import { HOST } from '@/data/common';
+import ZaloButton from '@/components/ZaloButton';
 
 const Index = () => {
   const popularProducts = getPopularProducts();
@@ -14,15 +15,16 @@ const Index = () => {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-sika-yellow to-sika-orange pt-10 pb-20">
+      <section className="relative bg-gradient-to-r from-sika-yellow to-sika-orange pt-10 pb-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="flex flex-col md:flex-row items-center">
             <div className="w-full md:w-1/2 text-center md:text-left">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 animate-fade-in" style={{lineHeight: 1.25}}>
-                Giải Pháp Chống Thấm <span className="text-sika-red">Hàng Đầu Việt Nam</span>
+                Kiến tạo giá trị bền vững cho <span className='text-sika-red'>mọi công trình</span>
+                {/* Giải Pháp Chống Thấm <span className="text-sika-red">Hàng Đầu Việt Nam</span> */}
               </h1>
               <p className="text-lg md:text-xl text-white mb-8 animate-fade-in" style={{ animationDelay: '0.2s' }}>
-                Công ty chúng tôi chuyên cung cấp các sản phẩm Sika chính hãng với chất lượng cao và giá cả cạnh tranh. Đồng hành cùng bạn trong mọi công trình.
+                Không chỉ bán sản phẩm, chúng tôi mang đến giải pháp xây dựng bền vững với Sika chính hãng và dịch vụ chuyên nghiệp hàng đầu miền Trung.
               </p>
               <div className="flex flex-col sm:flex-row justify-center md:justify-start space-y-4 sm:space-y-0 sm:space-x-4 animate-fade-in" style={{ animationDelay: '0.4s' }}>
                 <Link 
@@ -32,6 +34,14 @@ const Index = () => {
                   Xem Sản Phẩm
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
+
+                <a
+                  href="tel:0886880359"
+                  className="block md:hidden bg-sika-red hover:bg-red-700 text-white px-8 py-3 rounded-md font-medium transition-colors flex items-center justify-center"
+                >
+                  Gọi Ngay: 0886880359
+                </a>
+
                 <Link 
                   href="/lien-he" 
                   className="bg-white hover:bg-gray-100 text-sika-red px-8 py-3 rounded-md font-medium transition-colors flex items-center justify-center"
@@ -40,11 +50,11 @@ const Index = () => {
                 </Link>
               </div>
             </div>
-            <div className="w-full md:w-1/2 mt-10 md:mt-0 animate-fade-in" style={{ animationDelay: '0.6s' }}>
+            <div className="w-full md:w-1/2 mt-10 md:mt-0 animate-fade-in px-4" style={{ animationDelay: '0.6s' }}>
               <img
-                src={`${HOST}/lovable-uploads/d079693a-acfe-4966-a8a7-5e6dd6c5b59a.png`}
+                src={`${HOST}/lovable-uploads/nhan-su-cty.jpg`}
                 alt="Sika Vietnam Logo" 
-                className="w-3/4 md:w-1/2 mx-auto animate-bounce-slow"
+                className="w-full md:w-3/4 mx-auto animate-bounce-slow"
                 loading="lazy"
               />
             </div>
@@ -56,7 +66,7 @@ const Index = () => {
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-            Tại Sao Chọn <span className="text-sika-red">Sika?</span>
+            Tại Sao Chọn <span className="text-sika-red">Chúng tôi?</span>
           </h2>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -144,10 +154,10 @@ const Index = () => {
                 Liên Hệ Ngay
               </Link>
               <a 
-                href="tel:0948612300" 
+                href="tel:0886880359" 
                 className="border-2 border-white hover:bg-white hover:text-sika-red px-8 py-3 rounded-md font-medium transition-colors"
               >
-                Gọi Điện: 0948612300
+                Gọi Điện: 0886880359
               </a>
             </div>
           </div>
@@ -207,6 +217,11 @@ const Index = () => {
           </div>
         </div>
       </section>
+      
+      {/* Contact Form */}
+      <div className="md:col-span-2 animate-fade-in" style={{ animationDelay: '0.2s' }}>
+        <ZaloButton zaloId="0886880359"/>
+      </div>
     </Layout>
   );
 };

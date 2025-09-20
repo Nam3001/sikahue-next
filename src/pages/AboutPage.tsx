@@ -1,5 +1,6 @@
 
 import Layout from '@/components/Layout';
+import ZaloButton from '@/components/ZaloButton';
 import { HOST } from '@/data/common';
 import { Star } from 'lucide-react';
 
@@ -192,14 +193,18 @@ const AboutPage = () => {
                 Liên Hệ Ngay
               </a>
               <a 
-                href="tel:0948612300" 
+                href="tel:0886880359" 
                 className="border-2 border-white hover:bg-white hover:text-sika-red px-8 py-3 rounded-md font-medium transition-colors"
               >
-                Gọi Ngay: 0948612300
+                Gọi Ngay: 0886880359
               </a>
             </div>
           </div>
         </div>
+         {/* Contact Form */}
+            <div className="md:col-span-2 animate-fade-in" style={{ animationDelay: '0.2s' }}>
+              <ZaloButton zaloId="0886880359"/>
+            </div>
       </section>
     </Layout>
   );

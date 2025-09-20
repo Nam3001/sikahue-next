@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import { Search } from 'lucide-react';
 import Layout from '@/components/Layout';
 import { products } from '@/data/products';
+import ZaloButton from '@/components/ZaloButton';
 
 const categories = [
   "Tất cả",
@@ -169,10 +170,15 @@ const PricingPage = () => {
           <ul className="list-disc pl-5 space-y-1 text-gray-600">
             <li>Giá trên chưa bao gồm 10% VAT.</li>
             <li>Giá có thể thay đổi tùy theo thời điểm và số lượng đặt hàng.</li>
-            <li>Liên hệ: <a href="tel:0948612300" className="text-sika-red">0948612300</a> để được tư vấn và báo giá chính xác nhất.</li>
+            <li>Liên hệ: <a href="tel:0886880359" className="text-sika-red">0886880359</a> để được tư vấn và báo giá chính xác nhất.</li>
             <li>Giao hàng miễn phí trong nội thành Huế với đơn hàng từ 2 triệu đồng.</li>
           </ul>
         </div>
+      </div>
+
+      {/* Contact Form */}
+      <div className="md:col-span-2 animate-fade-in" style={{ animationDelay: '0.2s' }}>
+        <ZaloButton zaloId="0886880359"/>
       </div>
     </Layout>
   );

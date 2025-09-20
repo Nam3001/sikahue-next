@@ -89,11 +89,11 @@ const Navbar = () => {
           {/* Phone Number */}
           <div className="hidden md:flex items-center">
             <a 
-              href="tel:0948612300" 
+              href="tel:0886880359" 
               className="bg-sika-red hover:bg-red-700 text-white px-4 py-2 rounded-full flex items-center space-x-2 transition-all duration-300"
             >
               <Phone size={18} />
-              <span className="font-medium">0948612300</span>
+              <span className="font-medium">0886880359</span>
             </a>
           </div>
 
@@ -153,12 +153,6 @@ const Navbar = () => {
             >
               Liên Hệ
             </Link>
-            <a
-              href="tel:0948612300"
-              className="block py-2 px-4 bg-sika-red text-white rounded-md text-center"
-            >
-              Gọi Ngay: 0948612300
-            </a>
           </nav>
         )}
       </div>

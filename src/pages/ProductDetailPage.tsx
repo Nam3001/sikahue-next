@@ -6,6 +6,7 @@ import { ArrowLeft, Minus, Plus, Star } from 'lucide-react';
 import Layout from '@/components/Layout';
 import ProductCard from '@/components/ProductCard';
 import { getProductBySlug, getRelatedProducts } from '@/data/products';
+import ZaloButton from '@/components/ZaloButton';
 
 const ProductDetailPage = () => {
   const param = useParams()
@@ -15,6 +16,7 @@ const ProductDetailPage = () => {
   const product = getProductBySlug(slugString || '');
   const [quantity, setQuantity] = useState(1);
   const [activeTab, setActiveTab] = useState('description');
+  const [productImg, setProductImg] = useState(product?.image)
   
   const relatedProducts = product 
     ? getRelatedProducts(product.id, product.category) 
@@ -50,6 +52,10 @@ const ProductDetailPage = () => {
   const formatPrice = (price: number) => {
     return new Intl.NumberFormat('vi-VN').format(price);
   };
+
+  const handleChangeImage = (imgPath: string) => {
+    setProductImg(imgPath)
+  }
   
   return (
     <Layout>
@@ -77,7 +83,7 @@ const ProductDetailPage = () => {
           <div className="lg:w-1/2 px-4 mb-8 lg:mb-0">
             <div className="border rounded-lg overflow-hidden bg-white p-4 mb-4">
               <img
-                src={product.image}
+                src={productImg}
                 alt={product.name}
                 className="w-full h-96 object-contain object-center animate-fade-in"
                 loading="lazy"
@@ -86,7 +92,7 @@ const ProductDetailPage = () => {
             {product.gallery && product.gallery.length > 1 && (
               <div className="grid grid-cols-4 gap-2">
                 {product.gallery.map((image, index) => (
-                  <div key={index} className="border rounded-lg overflow-hidden bg-white p-2 cursor-pointer">
+                  <div key={index} className="border rounded-lg overflow-hidden bg-white p-2 cursor-pointer" onClick={() => handleChangeImage(image)}>
                     <img
                       src={image}
                       alt={`${product.name} - Ảnh ${index + 1}`}
@@ -276,6 +282,11 @@ const ProductDetailPage = () => {
             </div>
           </div>
         )}
+      </div>
+
+      {/* Contact Form */}
+      <div className="md:col-span-2 animate-fade-in" style={{ animationDelay: '0.2s' }}>
+        <ZaloButton zaloId="0886880359"/>
       </div>
     </Layout>
   );
