@@ -24,7 +24,7 @@ const Footer = () => {
                 </svg>
               </a>
               <a href="https://zalo.me/0886880359" className="text-gray-400 hover:text-white transition-colors">
-                <img src="/lovable-uploads/icon_zalo9.png" className="w-6 h-6 opacity-50 hover:opacity-100" alt="" />
+                <img src={`${HOST}/lovable-uploads/icon_zalo9.png`} className="w-6 h-6 opacity-50 hover:opacity-100" alt="" />
               </a>
             </div>
           </div>
